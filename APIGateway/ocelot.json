@@ -1,0 +1,29 @@
+{
+  "Routes": [
+
+    {
+      "DownStreamPathTemplate": "/api/res/{id}",
+      "DownStreamScheme": "https",
+      "DownStreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44390
+        }
+      ],
+      "UpStreamPathTemplate": "/res/{id}",
+      "UpStreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownStreamPathTemplate": "/api/contact/{id}",
+      "DownStreamScheme": "https",
+      "DownStreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44370
+        }
+      ],
+      "UpStreamPathTemplate": "/contact/{id}",
+      "UpStreamHttpMethod": [ "Get" ]
+    }
+  ]
+}
